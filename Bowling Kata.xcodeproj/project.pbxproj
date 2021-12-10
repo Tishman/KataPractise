@@ -1,0 +1,773 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		018AD3F9B9C881B69E4F64E3 /* Pods_Bowling_Kata_Bowling_KataUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49D638AA3D8D3572DA7806E0 /* Pods_Bowling_Kata_Bowling_KataUITests.framework */; };
+		0E49350C276208B500E0D2C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E49350B276208B500E0D2C6 /* AppDelegate.swift */; };
+		0E49350E276208B500E0D2C6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E49350D276208B500E0D2C6 /* SceneDelegate.swift */; };
+		0E493510276208B500E0D2C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E49350F276208B500E0D2C6 /* ViewController.swift */; };
+		0E493513276208B500E0D2C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E493511276208B500E0D2C6 /* Main.storyboard */; };
+		0E493515276208B600E0D2C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E493514276208B600E0D2C6 /* Assets.xcassets */; };
+		0E493518276208B600E0D2C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E493516276208B600E0D2C6 /* LaunchScreen.storyboard */; };
+		0E493523276208B600E0D2C6 /* Bowling_KataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E493522276208B600E0D2C6 /* Bowling_KataTests.swift */; };
+		0E49352D276208B600E0D2C6 /* Bowling_KataUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E49352C276208B600E0D2C6 /* Bowling_KataUITests.swift */; };
+		0E49352F276208B600E0D2C6 /* Bowling_KataUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E49352E276208B600E0D2C6 /* Bowling_KataUITestsLaunchTests.swift */; };
+		0E49353C27620E5100E0D2C6 /* BowlingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E49353B27620E5100E0D2C6 /* BowlingService.swift */; };
+		0E49353E276211C800E0D2C6 /* BowlingServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E49353D276211C800E0D2C6 /* BowlingServiceTests.swift */; };
+		0EE8DA6A276214D60001915C /* BowlingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E49353B27620E5100E0D2C6 /* BowlingService.swift */; };
+		0EE8DA6C2762243C0001915C /* FrameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE8DA6B2762243C0001915C /* FrameModel.swift */; };
+		A58985D5E314A12177BCCF99 /* Pods_Bowling_Kata.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FD0CB873A9EBADDAD55D4FF /* Pods_Bowling_Kata.framework */; };
+		FF5935436B1A434CE8F1D1A4 /* Pods_Bowling_KataTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D81402119974E2703B62D57 /* Pods_Bowling_KataTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0E49351F276208B600E0D2C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0E493500276208B500E0D2C6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0E493507276208B500E0D2C6;
+			remoteInfo = "Bowling Kata";
+		};
+		0E493529276208B600E0D2C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0E493500276208B500E0D2C6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0E493507276208B500E0D2C6;
+			remoteInfo = "Bowling Kata";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0E493508276208B500E0D2C6 /* Bowling Kata.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bowling Kata.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E49350B276208B500E0D2C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0E49350D276208B500E0D2C6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		0E49350F276208B500E0D2C6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0E493512276208B500E0D2C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0E493514276208B600E0D2C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0E493517276208B600E0D2C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0E493519276208B600E0D2C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E49351E276208B600E0D2C6 /* Bowling KataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bowling KataTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E493522276208B600E0D2C6 /* Bowling_KataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bowling_KataTests.swift; sourceTree = "<group>"; };
+		0E493528276208B600E0D2C6 /* Bowling KataUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bowling KataUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E49352C276208B600E0D2C6 /* Bowling_KataUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bowling_KataUITests.swift; sourceTree = "<group>"; };
+		0E49352E276208B600E0D2C6 /* Bowling_KataUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bowling_KataUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0E49353B27620E5100E0D2C6 /* BowlingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BowlingService.swift; sourceTree = "<group>"; };
+		0E49353D276211C800E0D2C6 /* BowlingServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BowlingServiceTests.swift; sourceTree = "<group>"; };
+		0EE8DA6B2762243C0001915C /* FrameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameModel.swift; sourceTree = "<group>"; };
+		2D81402119974E2703B62D57 /* Pods_Bowling_KataTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bowling_KataTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49D638AA3D8D3572DA7806E0 /* Pods_Bowling_Kata_Bowling_KataUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bowling_Kata_Bowling_KataUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FD0CB873A9EBADDAD55D4FF /* Pods_Bowling_Kata.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bowling_Kata.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		581983F92CE42A592B9C26EA /* Pods-Bowling Kata-Bowling KataUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bowling Kata-Bowling KataUITests.debug.xcconfig"; path = "Target Support Files/Pods-Bowling Kata-Bowling KataUITests/Pods-Bowling Kata-Bowling KataUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5A6FC8952125A2FCEB7CA7DE /* Pods-Bowling Kata.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bowling Kata.release.xcconfig"; path = "Target Support Files/Pods-Bowling Kata/Pods-Bowling Kata.release.xcconfig"; sourceTree = "<group>"; };
+		969ADC85670FC5E8EA9DA284 /* Pods-Bowling KataTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bowling KataTests.debug.xcconfig"; path = "Target Support Files/Pods-Bowling KataTests/Pods-Bowling KataTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B406268A9CFD02CE07DE668A /* Pods-Bowling Kata.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bowling Kata.debug.xcconfig"; path = "Target Support Files/Pods-Bowling Kata/Pods-Bowling Kata.debug.xcconfig"; sourceTree = "<group>"; };
+		D414A814A84DDEFE48D69372 /* Pods-Bowling Kata-Bowling KataUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bowling Kata-Bowling KataUITests.release.xcconfig"; path = "Target Support Files/Pods-Bowling Kata-Bowling KataUITests/Pods-Bowling Kata-Bowling KataUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D5AB3768A59AD1E0715C568E /* Pods-Bowling KataTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bowling KataTests.release.xcconfig"; path = "Target Support Files/Pods-Bowling KataTests/Pods-Bowling KataTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0E493505276208B500E0D2C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A58985D5E314A12177BCCF99 /* Pods_Bowling_Kata.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E49351B276208B600E0D2C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF5935436B1A434CE8F1D1A4 /* Pods_Bowling_KataTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E493525276208B600E0D2C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				018AD3F9B9C881B69E4F64E3 /* Pods_Bowling_Kata_Bowling_KataUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0E4934FF276208B500E0D2C6 = {
+			isa = PBXGroup;
+			children = (
+				0E49350A276208B500E0D2C6 /* Bowling Kata */,
+				0E493521276208B600E0D2C6 /* Bowling KataTests */,
+				0E49352B276208B600E0D2C6 /* Bowling KataUITests */,
+				0E493509276208B500E0D2C6 /* Products */,
+				C7B94CA17D8F40FDF4714E96 /* Pods */,
+				FD2D04E38BA50E3970B9D07C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0E493509276208B500E0D2C6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0E493508276208B500E0D2C6 /* Bowling Kata.app */,
+				0E49351E276208B600E0D2C6 /* Bowling KataTests.xctest */,
+				0E493528276208B600E0D2C6 /* Bowling KataUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0E49350A276208B500E0D2C6 /* Bowling Kata */ = {
+			isa = PBXGroup;
+			children = (
+				0E49350B276208B500E0D2C6 /* AppDelegate.swift */,
+				0E49350D276208B500E0D2C6 /* SceneDelegate.swift */,
+				0E49350F276208B500E0D2C6 /* ViewController.swift */,
+				0E493511276208B500E0D2C6 /* Main.storyboard */,
+				0E493514276208B600E0D2C6 /* Assets.xcassets */,
+				0E493516276208B600E0D2C6 /* LaunchScreen.storyboard */,
+				0E493519276208B600E0D2C6 /* Info.plist */,
+				0E49353B27620E5100E0D2C6 /* BowlingService.swift */,
+				0EE8DA6B2762243C0001915C /* FrameModel.swift */,
+			);
+			path = "Bowling Kata";
+			sourceTree = "<group>";
+		};
+		0E493521276208B600E0D2C6 /* Bowling KataTests */ = {
+			isa = PBXGroup;
+			children = (
+				0E493522276208B600E0D2C6 /* Bowling_KataTests.swift */,
+				0E49353D276211C800E0D2C6 /* BowlingServiceTests.swift */,
+			);
+			path = "Bowling KataTests";
+			sourceTree = "<group>";
+		};
+		0E49352B276208B600E0D2C6 /* Bowling KataUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0E49352C276208B600E0D2C6 /* Bowling_KataUITests.swift */,
+				0E49352E276208B600E0D2C6 /* Bowling_KataUITestsLaunchTests.swift */,
+			);
+			path = "Bowling KataUITests";
+			sourceTree = "<group>";
+		};
+		C7B94CA17D8F40FDF4714E96 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B406268A9CFD02CE07DE668A /* Pods-Bowling Kata.debug.xcconfig */,
+				5A6FC8952125A2FCEB7CA7DE /* Pods-Bowling Kata.release.xcconfig */,
+				581983F92CE42A592B9C26EA /* Pods-Bowling Kata-Bowling KataUITests.debug.xcconfig */,
+				D414A814A84DDEFE48D69372 /* Pods-Bowling Kata-Bowling KataUITests.release.xcconfig */,
+				969ADC85670FC5E8EA9DA284 /* Pods-Bowling KataTests.debug.xcconfig */,
+				D5AB3768A59AD1E0715C568E /* Pods-Bowling KataTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FD2D04E38BA50E3970B9D07C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4FD0CB873A9EBADDAD55D4FF /* Pods_Bowling_Kata.framework */,
+				49D638AA3D8D3572DA7806E0 /* Pods_Bowling_Kata_Bowling_KataUITests.framework */,
+				2D81402119974E2703B62D57 /* Pods_Bowling_KataTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0E493507276208B500E0D2C6 /* Bowling Kata */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0E493532276208B600E0D2C6 /* Build configuration list for PBXNativeTarget "Bowling Kata" */;
+			buildPhases = (
+				E9D2E3155BAB310C2F3CBA9C /* [CP] Check Pods Manifest.lock */,
+				0E493504276208B500E0D2C6 /* Sources */,
+				0E493505276208B500E0D2C6 /* Frameworks */,
+				0E493506276208B500E0D2C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Bowling Kata";
+			productName = "Bowling Kata";
+			productReference = 0E493508276208B500E0D2C6 /* Bowling Kata.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0E49351D276208B600E0D2C6 /* Bowling KataTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0E493535276208B600E0D2C6 /* Build configuration list for PBXNativeTarget "Bowling KataTests" */;
+			buildPhases = (
+				1B9AC343EE906A58C46E48E8 /* [CP] Check Pods Manifest.lock */,
+				0E49351A276208B600E0D2C6 /* Sources */,
+				0E49351B276208B600E0D2C6 /* Frameworks */,
+				0E49351C276208B600E0D2C6 /* Resources */,
+				373AAA75FC62EA086BB6CBAA /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0E493520276208B600E0D2C6 /* PBXTargetDependency */,
+			);
+			name = "Bowling KataTests";
+			productName = "Bowling KataTests";
+			productReference = 0E49351E276208B600E0D2C6 /* Bowling KataTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0E493527276208B600E0D2C6 /* Bowling KataUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0E493538276208B600E0D2C6 /* Build configuration list for PBXNativeTarget "Bowling KataUITests" */;
+			buildPhases = (
+				D9491F523DBFA6ED65284788 /* [CP] Check Pods Manifest.lock */,
+				0E493524276208B600E0D2C6 /* Sources */,
+				0E493525276208B600E0D2C6 /* Frameworks */,
+				0E493526276208B600E0D2C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0E49352A276208B600E0D2C6 /* PBXTargetDependency */,
+			);
+			name = "Bowling KataUITests";
+			productName = "Bowling KataUITests";
+			productReference = 0E493528276208B600E0D2C6 /* Bowling KataUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0E493500276208B500E0D2C6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					0E493507276208B500E0D2C6 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					0E49351D276208B600E0D2C6 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 0E493507276208B500E0D2C6;
+					};
+					0E493527276208B600E0D2C6 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 0E493507276208B500E0D2C6;
+					};
+				};
+			};
+			buildConfigurationList = 0E493503276208B500E0D2C6 /* Build configuration list for PBXProject "Bowling Kata" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0E4934FF276208B500E0D2C6;
+			productRefGroup = 0E493509276208B500E0D2C6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0E493507276208B500E0D2C6 /* Bowling Kata */,
+				0E49351D276208B600E0D2C6 /* Bowling KataTests */,
+				0E493527276208B600E0D2C6 /* Bowling KataUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0E493506276208B500E0D2C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E493518276208B600E0D2C6 /* LaunchScreen.storyboard in Resources */,
+				0E493515276208B600E0D2C6 /* Assets.xcassets in Resources */,
+				0E493513276208B500E0D2C6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E49351C276208B600E0D2C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E493526276208B600E0D2C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1B9AC343EE906A58C46E48E8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Bowling KataTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		373AAA75FC62EA086BB6CBAA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bowling KataTests/Pods-Bowling KataTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bowling KataTests/Pods-Bowling KataTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Bowling KataTests/Pods-Bowling KataTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9491F523DBFA6ED65284788 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Bowling Kata-Bowling KataUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9D2E3155BAB310C2F3CBA9C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Bowling Kata-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0E493504276208B500E0D2C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E493510276208B500E0D2C6 /* ViewController.swift in Sources */,
+				0E49350C276208B500E0D2C6 /* AppDelegate.swift in Sources */,
+				0E49353C27620E5100E0D2C6 /* BowlingService.swift in Sources */,
+				0EE8DA6C2762243C0001915C /* FrameModel.swift in Sources */,
+				0E49350E276208B500E0D2C6 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E49351A276208B600E0D2C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EE8DA6A276214D60001915C /* BowlingService.swift in Sources */,
+				0E49353E276211C800E0D2C6 /* BowlingServiceTests.swift in Sources */,
+				0E493523276208B600E0D2C6 /* Bowling_KataTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E493524276208B600E0D2C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E49352F276208B600E0D2C6 /* Bowling_KataUITestsLaunchTests.swift in Sources */,
+				0E49352D276208B600E0D2C6 /* Bowling_KataUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0E493520276208B600E0D2C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0E493507276208B500E0D2C6 /* Bowling Kata */;
+			targetProxy = 0E49351F276208B600E0D2C6 /* PBXContainerItemProxy */;
+		};
+		0E49352A276208B600E0D2C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0E493507276208B500E0D2C6 /* Bowling Kata */;
+			targetProxy = 0E493529276208B600E0D2C6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0E493511276208B500E0D2C6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0E493512276208B500E0D2C6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0E493516276208B600E0D2C6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0E493517276208B600E0D2C6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0E493530276208B600E0D2C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0E493531276208B600E0D2C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0E493533276208B600E0D2C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B406268A9CFD02CE07DE668A /* Pods-Bowling Kata.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Bowling Kata/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "bowlingkata.Bowling-Kata";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0E493534276208B600E0D2C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A6FC8952125A2FCEB7CA7DE /* Pods-Bowling Kata.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Bowling Kata/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "bowlingkata.Bowling-Kata";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0E493536276208B600E0D2C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 969ADC85670FC5E8EA9DA284 /* Pods-Bowling KataTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "bowlingkata.Bowling-KataTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bowling Kata.app/Bowling Kata";
+			};
+			name = Debug;
+		};
+		0E493537276208B600E0D2C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5AB3768A59AD1E0715C568E /* Pods-Bowling KataTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "bowlingkata.Bowling-KataTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bowling Kata.app/Bowling Kata";
+			};
+			name = Release;
+		};
+		0E493539276208B600E0D2C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 581983F92CE42A592B9C26EA /* Pods-Bowling Kata-Bowling KataUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "bowlingkata.Bowling-KataUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Bowling Kata";
+			};
+			name = Debug;
+		};
+		0E49353A276208B600E0D2C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D414A814A84DDEFE48D69372 /* Pods-Bowling Kata-Bowling KataUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "bowlingkata.Bowling-KataUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Bowling Kata";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0E493503276208B500E0D2C6 /* Build configuration list for PBXProject "Bowling Kata" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E493530276208B600E0D2C6 /* Debug */,
+				0E493531276208B600E0D2C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0E493532276208B600E0D2C6 /* Build configuration list for PBXNativeTarget "Bowling Kata" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E493533276208B600E0D2C6 /* Debug */,
+				0E493534276208B600E0D2C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0E493535276208B600E0D2C6 /* Build configuration list for PBXNativeTarget "Bowling KataTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E493536276208B600E0D2C6 /* Debug */,
+				0E493537276208B600E0D2C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0E493538276208B600E0D2C6 /* Build configuration list for PBXNativeTarget "Bowling KataUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E493539276208B600E0D2C6 /* Debug */,
+				0E49353A276208B600E0D2C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0E493500276208B500E0D2C6 /* Project object */;
+}
