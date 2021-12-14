@@ -8,23 +8,61 @@
 import Foundation
 
 struct GameModel {
-    var head: FrameModel?
-    var tail: FrameModel?
+    private var _notPlayedFrames: [FrameModel]
+    private var _playedFrames: [FrameModel]
+    private var _lastFrameBonus = 0
     
-    init() {
-        self.head = FrameModel(previous: nil, next: nil)
-        self.tail = nil
+    var notPlayedFrames: [FrameModel] { _notPlayedFrames }
+    var playedFrames: [FrameModel] { _playedFrames }
+    
+    var score: Int {
+        _notPlayedFrames.map(\.total).reduce(0, +)
     }
     
-    func score() -> Int {
-        guard head != nil else { return 0 }
-        var temp = head
-        var score = 0
-        while temp != nil {
-            score += temp!.total
-            temp = temp?.next
+    var isFirstFrame: Bool {
+        _notPlayedFrames.count == 10
+    }
+    
+    var isLastFrame: Bool {
+        _notPlayedFrames.count == 1
+    }
+    
+    init() {
+        self._notPlayedFrames = Array(repeating: FrameModel(), count: 10)
+        self._playedFrames = []
+    }
+    
+    mutating func playFrame() {
+        _playedFrames.append(_notPlayedFrames.removeLast())
+    }
+    
+    mutating func strikeRolled() {
+        if isFirstFrame {
+            _notPlayedFrames.last?.firstRoll = 10
+            _notPlayedFrames.last?.isStrike = true
+        } else if isLastFrame {
+            configureLastFrame()
+        } else {
+            _notPlayedFrames.last?.firstRoll = 10
+            _notPlayedFrames.last?.isStrike = true
+            for step in 0...1 {
+                let index = (_playedFrames.count - 1) - step
+                guard _playedFrames[index].isStrike else { break }
+                _playedFrames[index].firstRoll! += 10
+            }
         }
-        return score
+        
+        playFrame()
+    }
+    
+    private mutating func configureLastFrame() {
+        if _notPlayedFrames.last?.firstRoll == nil {
+            _notPlayedFrames.last?.firstRoll = 10
+        } else if _notPlayedFrames.last?.secondRoll == nil {
+            _notPlayedFrames.last?.secondRoll = 10
+        } else {
+            _lastFrameBonus = 10
+        }
     }
 }
 
@@ -33,23 +71,15 @@ final class FrameModel {
     var secondRoll: Int?
     var isStrike: Bool
     var isSpare: Bool
-    let previous: FrameModel?
-    let next: FrameModel?
     
     var total: Int {
         return (firstRoll ?? 0) + (secondRoll ?? 0)
     }
     
-    init(firstRoll: Int? = nil, secondRoll: Int? = nil, isStrike: Bool, isSpare: Bool, previous: FrameModel?, next: FrameModel?) {
+    init(firstRoll: Int? = nil, secondRoll: Int? = nil, isStrike: Bool = false, isSpare: Bool = false) {
         self.firstRoll = firstRoll
         self.secondRoll = secondRoll
         self.isStrike = isStrike
         self.isSpare = isSpare
-        self.previous = previous
-        self.next = next
-    }
-    
-    convenience init(previous: FrameModel?, next: FrameModel?) {
-        self.init(firstRoll: nil, secondRoll: nil, isStrike: false, isSpare: false, previous: previous, next: next)
     }
 }
