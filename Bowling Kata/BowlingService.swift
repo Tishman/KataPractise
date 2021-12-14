@@ -8,10 +8,15 @@
 import Foundation
 
 protocol BowlingService {
+    var game: GameModel { get set }
     func rollBall(pins: Int)
     func score() -> Int
 }
 
 final class BowlingServiceImpl: BowlingService {
     
+    var game = GameModel()
+    func score() -> Int {
+        game.score()
+    }
 }
