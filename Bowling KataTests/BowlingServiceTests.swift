@@ -90,13 +90,40 @@ final class BowlingServiceTests: QuickSpec {
                     }
                     
                     context("when several strikes") {
-                        beforeEach {
+                        context("and ten in row") {
+                            beforeEach {
+                                for _ in 1...10 {
+                                    bowlingService.rollBall(pins: 10)
+                                }
+                            }
                             
+                            it("it should have score 300") {
+                                expect(bowlingService.score()).to(be(300))
+                            }
+                        }
+                        
+                        context("and three in row") {
+                            beforeEach {
+                                for _ in 1...3 {
+                                    bowlingService.rollBall(pins: 10)
+                                }
+                            }
+                            
+                            it("it should have score 60") {
+                                expect(bowlingService.score()).to(be(60))
+                            }
                         }
                     }
                     
                     context("when strike is single in middle game") {
-                        
+                        beforeEach {
+                            bowlingService.rollBall(pins: 10)
+                            bowlingService.rollBall(pins: 5)
+                            bowlingService.rollBall(pins: 7)
+                        }
+                        it("it should have score 34") {
+                            expect(bowlingService.score()).to(be(34))
+                        }
                     }
                 }
                 
