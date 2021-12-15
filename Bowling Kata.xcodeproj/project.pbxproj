@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		018AD3F9B9C881B69E4F64E3 /* Pods_Bowling_Kata_Bowling_KataUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49D638AA3D8D3572DA7806E0 /* Pods_Bowling_Kata_Bowling_KataUITests.framework */; };
+		0E00BFE92769D10A009CA461 /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E00BFE82769D10A009CA461 /* Array+Extensions.swift */; };
+		0E00BFEA2769D371009CA461 /* FrameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE8DA6B2762243C0001915C /* FrameModel.swift */; };
+		0E00BFEB2769D38B009CA461 /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E00BFE82769D10A009CA461 /* Array+Extensions.swift */; };
 		0E49350C276208B500E0D2C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E49350B276208B500E0D2C6 /* AppDelegate.swift */; };
 		0E49350E276208B500E0D2C6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E49350D276208B500E0D2C6 /* SceneDelegate.swift */; };
 		0E493510276208B500E0D2C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E49350F276208B500E0D2C6 /* ViewController.swift */; };
@@ -43,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E00BFE82769D10A009CA461 /* Array+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
 		0E493508276208B500E0D2C6 /* Bowling Kata.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bowling Kata.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E49350B276208B500E0D2C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E49350D276208B500E0D2C6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -132,6 +136,7 @@
 				0E493519276208B600E0D2C6 /* Info.plist */,
 				0E49353B27620E5100E0D2C6 /* BowlingService.swift */,
 				0EE8DA6B2762243C0001915C /* FrameModel.swift */,
+				0E00BFE82769D10A009CA461 /* Array+Extensions.swift */,
 			);
 			path = "Bowling Kata";
 			sourceTree = "<group>";
@@ -399,6 +404,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E493510276208B500E0D2C6 /* ViewController.swift in Sources */,
+				0E00BFE92769D10A009CA461 /* Array+Extensions.swift in Sources */,
 				0E49350C276208B500E0D2C6 /* AppDelegate.swift in Sources */,
 				0E49353C27620E5100E0D2C6 /* BowlingService.swift in Sources */,
 				0EE8DA6C2762243C0001915C /* FrameModel.swift in Sources */,
@@ -411,8 +417,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0EE8DA6A276214D60001915C /* BowlingService.swift in Sources */,
+				0E00BFEB2769D38B009CA461 /* Array+Extensions.swift in Sources */,
 				0E49353E276211C800E0D2C6 /* BowlingServiceTests.swift in Sources */,
 				0E493523276208B600E0D2C6 /* Bowling_KataTests.swift in Sources */,
+				0E00BFEA2769D371009CA461 /* FrameModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

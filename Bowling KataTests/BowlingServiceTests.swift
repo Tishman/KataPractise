@@ -18,6 +18,7 @@ final class BowlingServiceTests: QuickSpec {
             var secondRoll = 0
             var bonus = 0
             var total: Int { firstRoll + secondRoll + bonus }
+            let initalState = Array(repeating: FrameModel(), count: 10)
             
             beforeEach {
                 bowlingService = BowlingServiceImpl()
@@ -28,10 +29,12 @@ final class BowlingServiceTests: QuickSpec {
                     
                     context("when frame is 1st") {
                         beforeEach {
+                            bowlingService.game.playedFrames.removeAll()
+                            bowlingService.game.notPlayedFrames = initalState
                             bowlingService.rollBall(pins: 10)
                         }
                         it("it should have score 10") {
-                            expect(bowlingService.score()).to(be(10))
+                            expect(bowlingService.score()).to(equal(10))
                         }
                     }
                     
