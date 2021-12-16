@@ -23,18 +23,21 @@ final class BowlingServiceImpl: BowlingService {
         guard !game.isLastFrame else {
             if game.notPlayedFrames.last?.firstRoll == nil {
                 game.notPlayedFrames.last?.firstRoll = pins
+                return
             } else if game.notPlayedFrames.last?.secondRoll == nil {
                 game.notPlayedFrames.last?.secondRoll = pins
+                return
             } else {
                 game.lastFrameBonus = pins
             }
             game.playFrame()
-            
             return
         }
         
         if game.notPlayedFrames.last?.firstRoll == nil {
             game.notPlayedFrames.last?.firstRoll = pins
+            guard pins == 10 else { return }
+            game.playFrame()
         } else if game.notPlayedFrames.last?.secondRoll == nil {
             game.notPlayedFrames.last?.secondRoll = pins
             game.playFrame()
