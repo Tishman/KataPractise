@@ -21,8 +21,12 @@ public struct GameModel {
     }
     
     public init() {
-        self.notPlayedFrames = Array(repeating: FrameModel(), count: 10)
         self.playedFrames = []
+        self.notPlayedFrames = []
+        
+        for _ in 0...9 {
+            self.notPlayedFrames.append(FrameModel())
+        }
     }
     
     mutating func playFrame() {
@@ -31,9 +35,15 @@ public struct GameModel {
     
     func score() -> Int {
         var score = 0
+        if (notPlayedFrames.last?.isFramePlaying ?? false) {
+            score += notPlayedFrames.last?.total ?? 0
+        }
+        
         for (index, frame) in playedFrames.enumerated() {
             if index == 9 {
-                score += lastFrameBonus
+                if frame.isStrike || frame.isSpare {
+                    score += lastFrameBonus
+                }
                 score += frame.total
                 continue
             }
@@ -43,6 +53,10 @@ public struct GameModel {
             if frame.isStrike {
                 if (playedFrames.element(atIndex: index + 1)?.isStrike ?? false)
                     && (playedFrames.element(atIndex: index + 2)?.isStrike ?? false) {
+                    score += 20
+                } else if (playedFrames.element(atIndex: index + 1)?.isStrike ?? false) &&
+                            playedFrames.element(atIndex: index + 2) == nil && (index + 1) == 9 {
+                    guard playedFrames.element(atIndex: index + 1)?.firstRoll == 10 else { continue }
                     score += 20
                 } else if (playedFrames.element(atIndex: index + 1)?.isStrike ?? false) {
                     score += 10
@@ -60,7 +74,7 @@ public struct GameModel {
     }
 }
 
-final class FrameModel {
+class FrameModel {
     var firstRoll: Int? {
         didSet {
             if firstRoll == 10 {
@@ -80,6 +94,11 @@ final class FrameModel {
     
     var total: Int {
         return (firstRoll ?? 0) + (secondRoll ?? 0)
+    }
+    
+    var isFramePlaying: Bool {
+        guard firstRoll != nil, !isStrike, secondRoll == nil else { return false }
+        return true
     }
     
     init(firstRoll: Int? = nil, secondRoll: Int? = nil, isStrike: Bool = false, isSpare: Bool = false) {
